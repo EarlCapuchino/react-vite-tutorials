@@ -1,68 +1,221 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+/* Resetting default margin and padding */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up the color scheme */
+:root {
+  --primary-color: #D71A21; 
+  --text-color: #191919;
+  --background-color: #f0f0f0; /* Light background color */
+  --font-size-base: 16px; /* Base font size */
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden; /* Preventing horizontal scroll */
+  background-color: var(--background-color); /* Set background color */
+  min-height: 100vh; /* Ensure the body covers the entire viewport height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  font-size: 1rem; /* Set base font size */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999; /* Ensure navbar is above other content */
+  position: fixed;
+  width: 100%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.navbar .website-title {
+  color: white;
+  font-size: 1.5rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--text-color);
+}
+
+.navbar ul li a.active-tab {
+  color: var(--text-color);
+}
+
+/* Container styling */
+.container {
+  flex: 1; /* Ensure the container expands to fill available space */
+  padding: 2rem;
+  padding-top: 6rem;
+  color: var(--text-color); /* Set text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Welcome message styling */
+.welcome-container {
+  background-color: var(--text-color); /* Modern blue color for welcome message background */
+  display: flex;
+  height: 35vh;
+  align-items:end;
+  justify-content: center;
+  padding-top: 30rem
+}
+
+.welcome-message {
+  color: #fff;
+  padding: 3rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.welcome-message h1 {
+  margin-bottom: 2rem;
+}
+
+.welcome-message p {
+  margin-bottom: 1.5rem;
+}
+
+.details {
+  border-top: 0.1rem solid #fff; /* White border above details */
+  padding-top: 1.5rem;
+}
+
+.details p {
+  margin: 0;
+}
+
+.details p strong {
+  margin-right: 0.5rem;
+}
+
+/* Flight details styling */
+.flight-details {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%; /* Set flight details width to 45% of the container */
+  max-width: 800px; /* Set maximum width for larger screens */
+}
+
+.flight-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1); /* Adding box shadow for a modern look */
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  color: white;
+  margin: 0;
+}
+
+.edit-delete-links {
+  display: flex;
+  align-items: center;
+}
+
+.edit-link,
+.delete-link {
+  color: #fff; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+  margin-right: 1rem; /* Add some space between links */
+  transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.edit-link:hover,
+.delete-link:hover {
+  color: #252525; /* Change text color to theme color on hover */
+}
+
+.card-details {
+  padding: 2rem;
+}
+
+/* Additional styling */
+.form-container {
+  max-width: 37.5rem; /* 600px */
+  margin: auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button[type="submit"]:hover {
+  background-color: #af0a16;
+}
+
+/* Footer styling */
+.footer {
+  background-color: var(--text-color); /* Set background color */
+  color: white; /* Set text color */
+  text-align: center; /* Align text to center */
+  padding: 2rem 0; /* Add padding */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
 }
