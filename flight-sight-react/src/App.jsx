@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,21 +6,21 @@ function App() {
 
   return (
     <>
- <nav class="navbar">
-        <h1 class="website-title">FlightSight</h1>
+ <nav className="navbar">
+        <h1 className="website-title">FlightSight</h1>
         <ul>
-            <li><a href="home.html"  class="active-tab">Home</a></li>
+            <li><a href="home.html"  className="active-tab">Home</a></li>
             <li><a href="flights.html">Flights</a></li>
             <li><a href="addFlight.html">Add Flights</a></li>
         </ul>
     </nav>
 
-    <div class="welcome-container">
-        <div class="welcome-message">
+    <div className="welcome-container">
+        <div className="welcome-message">
             <h1>Welcome Aboard, Travellers!</h1>
             <p>Embark on a journey with us and explore aircraft flights from around the world with ease.</p>
             <p>Whether you're a passionate aviation enthusiast, a frequent traveler, or simply curious about the movement of aircraft worldwide, FlightSight offers an intuitive platform to track flights in real-time.</p>
-            <div class="details">
+            <div className="details">
                 <p><strong>Local Time:</strong> 9:00 AM</p>
                 <p><strong>Country:</strong> United States</p>
                 <p><strong>Weather:</strong> Sunny</p>
@@ -30,14 +28,14 @@ function App() {
         </div>
     </div>
 
-    <div class="container">
-        <h2 class="flight-header">Flight Details</h2>
-        <div class="flight-details">
-            <div class="flight-card">
-                <div class="card-header">
+    <div className="container">
+        <h2 className="flight-header">Flight Details</h2>
+        <div className="flight-details">
+            <div className="flight-card">
+                <div className="card-header">
                     <h3>Flight Number: EK215</h3>
                 </div>
-                <div class="card-details">
+                <div className="card-details">
                     <p><strong>Airlines:</strong> Emirates</p>
                     <p><strong>Departure:</strong> New York (JFK)</p>
                     <p><strong>Destination:</strong> Dubai (DXB)</p>
@@ -46,11 +44,11 @@ function App() {
                     <p><strong>Aircraft:</strong> Airbus A380</p>
                 </div>
             </div>
-            <div class="flight-card">
-                <div class="card-header">
+            <div className="flight-card">
+                <div className="card-header">
                     <h3>Flight Number: SQ21</h3>
                 </div>
-                <div class="card-details">
+                <div className="card-details">
                     <p><strong>Airlines:</strong> Singapore Airlines</p>
                     <p><strong>Departure:</strong> Newark (EWR)</p>
                     <p><strong>Destination:</strong> Singapore (SIN)</p>
@@ -59,11 +57,11 @@ function App() {
                     <p><strong>Aircraft:</strong> Airbus A350</p>
                 </div>
             </div>
-            <div class="flight-card">
-                <div class="card-header">
+            <div className="flight-card">
+                <div className="card-header">
                     <h3>Flight Number: BA9</h3>
                 </div>
-                <div class="card-details">
+                <div className="card-details">
                     <p><strong>Airlines:</strong> British Airways</p>
                     <p><strong>Departure:</strong> London (LHR)</p>
                     <p><strong>Destination:</strong> Sydney (SYD)</p>
@@ -75,7 +73,7 @@ function App() {
         </div>
     </div>
 
-    <footer class="footer">
+    <footer className="footer">
         <p>&copy; 2024 TrygoDigital Data Services. All rights reserved.</p>
     </footer>
     </>
