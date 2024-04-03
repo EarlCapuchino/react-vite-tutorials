@@ -80,7 +80,6 @@ body {
 .welcome-container {
   background-color: var(--text-color); /* Modern blue color for welcome message background */
   display: flex;
-  height: 35vh;
   align-items:end;
   justify-content: center;
   padding-top: 30rem
@@ -233,6 +232,27 @@ button[type="submit"]:hover {
   color: var(--primary-color);
 }
 
+.user-field {
+  width: 3px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.user-field::placeholder {
+  color: #999; /* Placeholder color */
+}
+
+/* Optional: Add focus styles */
+.user-field:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: var(--primary-color); /* Change border color on focus */
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); /* Add box shadow on focus */
+}
 /* Footer styling */
 .footer {
   background-color: var(--text-color); /* Set background color */
