@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Flight - FlightSight</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="addFlightStyles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="website-title">FlightSight</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li><a href="addFlight.html" class="active-tab">Add Flights</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Add Flight</h2>
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="flight-number">Flight Number:</label>
+                    <input type="text" id="flight-number" name="flight-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="airlines">Airlines:</label>
+                    <input type="text" id="airlines" name="airlines" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure">Departure:</label>
+                    <input type="text" id="departure" name="departure" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure-time">Departure Time:</label>
+                    <input type="datetime-local" id="departure-time" name="departure-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="arrival-time">Arrival Time:</label>
+                    <input type="datetime-local" id="arrival-time" name="arrival-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="aircraft">Aircraft:</label>
+                    <input type="text" id="aircraft" name="aircraft" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 TrygoDigital Data Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

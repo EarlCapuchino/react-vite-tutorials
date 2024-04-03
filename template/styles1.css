@@ -1,0 +1,217 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the color scheme */
+:root {
+    --primary-color: #D71A21; 
+    --text-color: #191919;
+    --background-color: #f0f0f0; /* Light background color */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden; /* Preventing horizontal scroll */
+    background-color: var(--background-color); /* Set background color */
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999; /* Ensure navbar is above other content */
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .website-title {
+    color: white;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--text-color);
+}
+
+.navbar ul li a.active-tab {
+    color: var(--text-color);
+}
+
+/* Container styling */
+.container {
+    flex: 1; /* Ensure the container expands to fill available space */
+    padding: 20px;
+    color: var(--text-color); /* Set text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Welcome message styling */
+.welcome-container {
+    background-color: var(--text-color); /* Modern blue color for welcome message background */
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-message {
+    color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.welcome-message h1 {
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    margin-bottom: 15px;
+}
+
+.details {
+    border-top: 1px solid #fff; /* White border above details */
+    padding-top: 15px;
+}
+
+.details p {
+    margin: 0;
+}
+
+.details p strong {
+    margin-right: 5px;
+}
+
+/* Flight details styling */
+.flight-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%; /* Set flight details width to 45% of the container */
+    max-width: 800px; /* Set maximum width for larger screens */
+}
+
+.flight-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding box shadow for a modern look */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    color: white;
+    margin: 0;
+}
+
+.edit-delete-links {
+    display: flex;
+    align-items: center;
+}
+
+.edit-link,
+.delete-link {
+    color: #fff; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; /* Add some space between links */
+    transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.edit-link:hover,
+.delete-link:hover {
+    color: #252525; /* Change text color to theme color on hover */
+}
+
+.card-details {
+    padding: 20px;
+}
+
+/* Additional styling */
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #af0a16;
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--text-color); /* Set background color */
+    color: white; /* Set text color */
+    text-align: center; /* Align text to center */
+    padding: 20px 0; /* Add padding */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+}
