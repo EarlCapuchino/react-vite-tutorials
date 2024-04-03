@@ -10,6 +10,7 @@
     --primary-color: #D71A21; 
     --text-color: #191919;
     --background-color: #f0f0f0; /* Light background color */
+    --font-size-base: 16px; /* Base font size */
 }
 
 /* Body styling */
@@ -21,12 +22,13 @@ body {
     min-height: 100vh; /* Ensure the body covers the entire viewport height */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange children in a column */
+    font-size: 1rem; /* Set base font size */
 }
 
 /* Navbar styling */
 .navbar {
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +39,7 @@ body {
 
 .navbar .website-title {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .navbar ul {
@@ -46,7 +48,7 @@ body {
 
 .navbar ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1rem;
 }
 
 .navbar ul li a {
@@ -66,7 +68,8 @@ body {
 /* Container styling */
 .container {
     flex: 1; /* Ensure the container expands to fill available space */
-    padding: 20px;
+    padding: 2rem;
+    padding-top: 6rem;
     color: var(--text-color); /* Set text color */
     display: flex;
     flex-direction: column;
@@ -78,28 +81,28 @@ body {
     background-color: var(--text-color); /* Modern blue color for welcome message background */
     display: flex;
     height: 35vh;
-    align-items: center;
+    align-items:end;
     justify-content: center;
 }
 
 .welcome-message {
     color: #fff;
-    padding: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    padding: 3rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
 }
 
 .welcome-message h1 {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .welcome-message p {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .details {
-    border-top: 1px solid #fff; /* White border above details */
-    padding-top: 15px;
+    border-top: 0.1rem solid #fff; /* White border above details */
+    padding-top: 1.5rem;
 }
 
 .details p {
@@ -107,12 +110,12 @@ body {
 }
 
 .details p strong {
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }
 
 /* Flight details styling */
 .flight-details {
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,17 +125,17 @@ body {
 
 .flight-card {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding box shadow for a modern look */
-    margin-bottom: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1); /* Adding box shadow for a modern look */
+    margin-bottom: 2rem;
     width: 100%;
 }
 
 .card-header {
     background-color: var(--primary-color);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 15px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,7 +155,7 @@ body {
 .delete-link {
     color: #fff; /* Set text color to white */
     text-decoration: none; /* Remove underline */
-    margin-right: 10px; /* Add some space between links */
+    margin-right: 1rem; /* Add some space between links */
     transition: color 0.3s ease; /* Add transition effect for color change */
 }
 
@@ -162,21 +165,21 @@ body {
 }
 
 .card-details {
-    padding: 20px;
+    padding: 2rem;
 }
 
 /* Additional styling */
 .form-container {
-    max-width: 600px;
+    max-width: 37.5rem; /* 600px */
     margin: auto;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    padding: 3rem;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 label {
@@ -186,9 +189,9 @@ label {
 input[type="text"],
 input[type="datetime-local"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
     box-sizing: border-box;
 }
 
@@ -196,8 +199,8 @@ button[type="submit"] {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -211,7 +214,7 @@ button[type="submit"]:hover {
     background-color: var(--text-color); /* Set background color */
     color: white; /* Set text color */
     text-align: center; /* Align text to center */
-    padding: 20px 0; /* Add padding */
+    padding: 2rem 0; /* Add padding */
     bottom: 0; /* Align to the bottom */
     width: 100%; /* Full width */
 }
