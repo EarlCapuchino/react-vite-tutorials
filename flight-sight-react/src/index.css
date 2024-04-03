@@ -210,6 +210,29 @@ button[type="submit"]:hover {
   background-color: #af0a16;
 }
 
+.login-button{
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: 2rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.details-button {
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: .7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.details-button:hover {
+  color: var(--primary-color);
+}
+
 /* Footer styling */
 .footer {
   background-color: var(--text-color); /* Set background color */
@@ -219,3 +242,4 @@ button[type="submit"]:hover {
   bottom: 0; /* Align to the bottom */
   width: 100%; /* Full width */
 }
+

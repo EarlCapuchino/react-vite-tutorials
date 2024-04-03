@@ -10,7 +10,7 @@ function App() {
     weather: "Sunny",
   }
   
-  const loggedIn = true;
+  const loggedIn = false;
   return (
     <>
     <NavBar/>
