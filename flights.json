@@ -1,0 +1,146 @@
+[
+    {
+        "flightNo": "EK215",
+        "airlines": "Emirates",
+        "from": "New York (JFK)",
+        "to": "Dubai (DXB)",
+        "departure": "2024-04-03T22:00:00",
+        "arrival": "2024-04-04T19:00:00",
+        "aircraftDetail": "Airbus A380"
+    },
+    {
+        "flightNo": "SQ21",
+        "airlines": "Singapore Airlines",
+        "from": "Newark (EWR)",
+        "to": "Singapore (SIN)",
+        "departure": "2024-04-03T20:00:00",
+        "arrival": "2024-04-04T06:00:00",
+        "aircraftDetail": "Airbus A350"
+    },
+    {
+        "flightNo": "BA9",
+        "airlines": "British Airways",
+        "from": "London (LHR)",
+        "to": "Sydney (SYD)",
+        "departure": "2024-04-04T21:00:00",
+        "arrival": "2024-04-05T18:00:00",
+        "aircraftDetail": "Boeing 777"
+    },
+    {
+        "flightNo": "DL109",
+        "airlines": "Delta Air Lines",
+        "from": "Atlanta (ATL)",
+        "to": "Tokyo (HND)",
+        "departure": "2024-04-03T23:00:00",
+        "arrival": "2024-04-04T05:00:00",
+        "aircraftDetail": "Boeing 767"
+    },
+    {
+        "flightNo": "LH454",
+        "airlines": "Lufthansa",
+        "from": "Frankfurt (FRA)",
+        "to": "Los Angeles (LAX)",
+        "departure": "2024-04-03T18:00:00",
+        "arrival": "2024-04-03T21:00:00",
+        "aircraftDetail": "Boeing 747"
+    },
+    {
+        "flightNo": "AF84",
+        "airlines": "Air France",
+        "from": "Paris (CDG)",
+        "to": "Rio de Janeiro (GIG)",
+        "departure": "2024-04-03T20:30:00",
+        "arrival": "2024-04-04T04:30:00",
+        "aircraftDetail": "Airbus A330"
+    },
+    {
+        "flightNo": "QF1",
+        "airlines": "Qantas",
+        "from": "Sydney (SYD)",
+        "to": "London (LHR)",
+        "departure": "2024-04-04T22:30:00",
+        "arrival": "2024-04-05T05:30:00",
+        "aircraftDetail": "Boeing 787"
+    },
+    {
+        "flightNo": "UA881",
+        "airlines": "United Airlines",
+        "from": "San Francisco (SFO)",
+        "to": "Singapore (SIN)",
+        "departure": "2024-04-03T23:45:00",
+        "arrival": "2024-04-04T05:45:00",
+        "aircraftDetail": "Boeing 777"
+    },
+    {
+        "flightNo": "TK12",
+        "airlines": "Turkish Airlines",
+        "from": "Istanbul (IST)",
+        "to": "New York (JFK)",
+        "departure": "2024-04-03T22:15:00",
+        "arrival": "2024-04-04T03:15:00",
+        "aircraftDetail": "Boeing 787"
+    },
+    {
+        "flightNo": "CX888",
+        "airlines": "Cathay Pacific",
+        "from": "Hong Kong (HKG)",
+        "to": "Vancouver (YVR)",
+        "departure": "2024-04-03T19:30:00",
+        "arrival": "2024-04-03T16:30:00",
+        "aircraftDetail": "Airbus A350"
+    },
+    {
+        "flightNo": "AA100",
+        "airlines": "American Airlines",
+        "from": "Dallas (DFW)",
+        "to": "London (LHR)",
+        "departure": "2024-04-03T21:45:00",
+        "arrival": "2024-04-04T12:45:00",
+        "aircraftDetail": "Boeing 777"
+    },
+    {
+        "flightNo": "NH2",
+        "airlines": "All Nippon Airways",
+        "from": "Tokyo (HND)",
+        "to": "Los Angeles (LAX)",
+        "departure": "2024-04-03T22:00:00",
+        "arrival": "2024-04-03T13:00:00",
+        "aircraftDetail": "Boeing 787"
+    },
+    {
+        "flightNo": "PR102",
+        "airlines": "Philippine Airlines",
+        "from": "Manila (MNL)",
+        "to": "Los Angeles (LAX)",
+        "departure": "2024-04-03T23:30:00",
+        "arrival": "2024-04-03T18:30:00",
+        "aircraftDetail": "Airbus A350"
+    },
+    {
+        "flightNo": "KL605",
+        "airlines": "KLM Royal Dutch Airlines",
+        "from": "Amsterdam (AMS)",
+        "to": "Toronto (YYZ)",
+        "departure": "2024-04-03T19:15:00",
+        "arrival": "2024-04-03T21:15:00",
+        "aircraftDetail": "Boeing 777"
+    },
+    {
+        "flightNo": "EY101",
+        "airlines": "Etihad Airways",
+        "from": "Abu Dhabi (AUH)",
+        "to": "New York (JFK)",
+        "departure": "2024-04-03T20:45:00",
+        "arrival": "2024-04-04T02:45:00",
+        "aircraftDetail": "Boeing 787"
+    },
+    {
+        "flightNo": "VS1",
+        "airlines": "Virgin Atlantic",
+        "from": "London (LHR)",
+        "to": "New York (JFK)",
+        "departure": "2024-04-03T17:00:00",
+        "arrival": "2024-04-03T19:00:00",
+        "aircraftDetail": "Airbus A350"
+    }
+]
