@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import './App.css'
-
+import NavBar from './components/NavBar';
+import Welcome from './components/Welcome';
 function App() {
   const details = {
     time: "11:00 PM",
@@ -41,28 +41,8 @@ function App() {
   const loggedIn = true;
   return (
     <>
- <nav className="navbar">
-        <h1 className="website-title">FlightSight</h1>
-        <ul>
-            <li><a href="home.html"  className="active-tab">Home</a></li>
-            <li><a href="flights.html">Flights</a></li>
-            <li><a href="addFlight.html">Add Flights</a></li>
-        </ul>
-    </nav>
-
-    <div className="welcome-container">
-        <div className="welcome-message">
-            {loggedIn ? <h1> Welcome Aboard, Member! </h1> : <h1>Hi There Guest!</h1>}
-            <p>Embark on a journey with us and explore aircraft flights from around the world with ease.</p>
-            <p>Whether you're a passionate aviation enthusiast, a frequent traveler, or simply curious about the movement of aircraft worldwide, FlightSight offers an intuitive platform to track flights in real-time.</p>
-            <div className="details">
-                <p><strong>Local Time:</strong>{details.time}</p>
-                <p><strong>Country:</strong>{details.country}</p>
-                <p><strong>Weather:</strong>{details.weather}</p>
-            </div>
-        </div>
-    </div>
-
+    <NavBar/>
+    <Welcome details = {details} loggedIn = {loggedIn}/>
     <div className="container">
         <h2 className="flight-header">Flight Details</h2>
         <div className="flight-details">
