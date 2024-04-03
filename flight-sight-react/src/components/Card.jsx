@@ -1,10 +1,9 @@
 import React from 'react'
 
-const Card = ({flights}) => {
+const Card = ({flight}) => {
   return (
     <>
-    {flights.map(flight => (
-        <div key={flight.flightNo} className="flight-card">
+       <div key={flight.flightNo} className="flight-card">
             <div className="card-header">
             <h3>Flight Number: {flight.flightNo}</h3>
             </div>
@@ -17,7 +16,6 @@ const Card = ({flights}) => {
             <p><strong>Aircraft:</strong> {flight.aircraftDetail}</p>
             </div>
         </div>
-    ))}
     </>
   )
 }

@@ -5,7 +5,9 @@ const FlightCards = ({flights}) => {
     <div className="container">
     <h2 className="flight-header">Flight Details</h2>
     <div className="flight-details">
-    <Card flights = {flights}/>
+    {flights.map(flight => (
+        <Card flight ={flight}/>
+    ))}
     </div>
     </div>
   )
