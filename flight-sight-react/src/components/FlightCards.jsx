@@ -1,21 +1,17 @@
 import React, { useState } from 'react';
 import Card from './Card';
-import flights from '../../../flights.json';
+import { useEffect } from 'react';
 
 const FlightCards = () => {
-  const [flightList, setFlightList] = useState(flights);
-  const addFlight = () => {
-    const newFlight = {
-      flightNo: 'NEW123', 
-      airlines: 'New Airline', 
-      from: 'New Origin', 
-      to: 'New Destination', 
-      departure: 'New Departure Time', 
-      arrival: 'New Arrival Time', 
-      aircraftDetail: 'New Aircraft'
-    };
-    setFlightList([...flightList, newFlight]);
-  };
+  const [flightList, setFlightList] = useState([]); //you need to fetch from the database/backend 
+  
+  useEffect(() => { //make sure to address CORS in your backend/index.js
+    fetch('http://localhost:5000/flights')
+      .then(response => response.json())
+      .then(body => {
+        setFlightList(body)
+      })
+  })
 
   return (
     <div className="container">
@@ -25,7 +21,6 @@ const FlightCards = () => {
           <Card key={flight.flightNo} flight={flight} />
         ))}
       </div>
-      <button onClick={addFlight}>Add Flight</button>
     </div>
   );
 };
