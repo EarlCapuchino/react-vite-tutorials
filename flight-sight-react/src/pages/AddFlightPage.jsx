@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Flight - FlightSight</title>
-    <link rel="stylesheet" href="styles1.css">
-    <link rel="stylesheet" href="addFlightStyles.css">
-</head>
-<body>
-    <nav class="navbar">
-        <h1 class="website-title">FlightSight</h1>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="flights.html">Flights</a></li>
-            <li><a href="addFlight.html" class="active-tab">Add Flights</a></li>
-        </ul>
-    </nav>
+import React from 'react'
 
+const AddFlightPage = () => {
+  return (
+    
     <div class="container">
         <h2>Add Flight</h2>
         <div class="form-container">
@@ -53,9 +39,7 @@
             </form>
         </div>
     </div>
+  )
+}
 
-    <footer class="footer">
-        <p>&copy; 2024 TrygoDigital Data Services. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+export default AddFlightPage
