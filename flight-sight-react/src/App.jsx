@@ -1,24 +1,18 @@
 import './App.css'
-import FlightCards from './components/FlightCards';
-import Footer from './components/Footer';
-import NavBar from './components/NavBar';
-import Welcome from './components/Welcome';
-function App() {
-  const details = {
-    time: "11:00 PM",
-    country: "Philippines",
-    weather: "Sunny",
-  }
-  
-  const loggedIn = false;
-  return (
-    <>
-    <NavBar/>
-    <Welcome details = {details} loggedIn = {loggedIn}/>
-    <FlightCards />
-    <Footer/>
-    </>
-  )
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider
+} from 'react-router-dom'
+import HomePage from './pages/HomePage'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route index element={<HomePage/>} />)
+
+)
+const App = () => {
+ return <RouterProvider router = {router}/>
 }
 
 export default App
