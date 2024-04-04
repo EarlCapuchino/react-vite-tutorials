@@ -57,6 +57,20 @@ body {
   transition: color 0.3s ease;
 }
 
+.delete-link.btn {
+  background-color: #D71A21; /* Set background color */
+  color: white; /* Set text color */
+  padding: 0.5rem 1rem; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 0.5rem; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.delete-link.btn:hover {
+  background-color: #af0a16; /* Change background color on hover */
+}
+
 .navbar ul li a:hover {
   color: var(--text-color);
 }
@@ -151,19 +165,31 @@ body {
   align-items: center;
 }
 
-.edit-link,
-.delete-link {
+.edit-link{
   color: #fff; /* Set text color to white */
   text-decoration: none; /* Remove underline */
   margin-right: 1rem; /* Add some space between links */
   transition: color 0.3s ease; /* Add transition effect for color change */
 }
 
-.edit-link:hover,
-.delete-link:hover {
+.edit-link:hover
+{
   color: #252525; /* Change text color to theme color on hover */
 }
 
+.delete-link {
+  background-color: #D71A21; /* Set background color */
+  color: white; /* Set text color */
+  padding: 0.5rem 1rem; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 0.5rem; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.delete-link:hover {
+  background-color: #af0a16; /* Change background color on hover */
+}
 .card-details {
   padding: 2rem;
 }
